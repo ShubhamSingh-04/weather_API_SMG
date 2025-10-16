@@ -96,7 +96,3 @@ The following are set in the `config.js` file:
 
 - `CACHE_DURATION_MS`
 - `CLEANUP_INTERVAL_MS`
-
-```
-
-```
