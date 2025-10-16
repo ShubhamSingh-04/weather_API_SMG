@@ -28,6 +28,20 @@ A simple and efficient REST API built with Node.js and Express to provide weathe
 3.  **Install dependencies:**
     `npm install`
 
+4.  **Set up environment variables:**
+    Create a `.env` file in the root directory and add your OpenWeatherMap API key:
+    ```
+    OPEN_WEATHER_API_KEY=your_api_key_here
+    PORT=3000
+    ```
+5.  **Start the server:**
+    `npm start`
+
+The following are set in the `config.js` file:
+
+- `CACHE_DURATION_MS`
+- `CLEANUP_INTERVAL_MS`
+
 ## 🖥️ Usage
 
 ### Running the application
@@ -80,19 +94,3 @@ Returns a JSON object containing the key weather details.
   "humidity": 87
 }
 ```
-
-## ⚙️ Configuration
-
-### Environment Variables
-
-Create a `.env` file in the root of the project to set the following:
-
-- `PORT`: The port the server will run on (defaults to `3000`).
-- `OPEN_WEATHER_API_KEY`: Your API key from OpenWeatherMap.
-
-### Application Constants
-
-The following are set in the `config.js` file:
-
-- `CACHE_DURATION_MS`
-- `CLEANUP_INTERVAL_MS`
