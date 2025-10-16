@@ -7,7 +7,7 @@ A simple and efficient REST API built with Node.js and Express to provide weathe
 - **Express Server**: Provides robust and simple API routing.
 - **OpenWeatherMap Integration**: Fetches real-time weather data from the OpenWeatherMap API.
 - **Weather Endpoint**: A dedicated `/weather` route to fetch weather data.
-- **Data Caching**: Implements a local cache to store recent weather data and reduce latency.
+- **Data Caching**: Implements a local cache (uses SQLite) to store recent weather data and reduce latency.
 - **Automatic Cache Cleanup**: A scheduled job periodically removes expired data from the cache.
 
 ## 🚀 Installation
@@ -16,6 +16,7 @@ A simple and efficient REST API built with Node.js and Express to provide weathe
 
 - Node.js (v18 or higher)
 - npm or yarn
+- SQLite3
 
 ### Steps
 
